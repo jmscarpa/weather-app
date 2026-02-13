@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="card">
+        <h1>Weather Cast</h1>
+
+        <%= form_with url: search_path, class: "search-form" do |f| %>
+            <%= f.text_field :address, placeholder: "Search by address", autofocus: true %>
+            <%= f.submit "Search" %>
+        <% end %>
+
+        <div class="empty-state">
+            <p>Enter an address to see the current weather.</p>
+        </div>
+    </div>
+</div>
