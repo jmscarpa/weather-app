@@ -1,0 +1,16 @@
+name: "weather_app"
+
+services:
+  rails-app:
+    build:
+      context: ..
+      dockerfile: .devcontainer/Dockerfile
+    volumes:
+      - ../../weather-app:/workspaces/weather-app:cached
+    command: sleep infinity
+    depends_on:
+      - selenium
+
+  selenium:
+    image: selenium/standalone-chromium
+    restart: unless-stopped
