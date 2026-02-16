@@ -1,24 +1,41 @@
-# README
+# Weather App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Rails app that fetches geocoded locations and current weather data.
 
-Things you may want to cover:
+## Requirements
 
-* Ruby version
+- Ruby 3.4.8 (see .ruby-version)
+- Node.js and Yarn
+- SQLite3
 
-* System dependencies
+## Configuration
 
-* Configuration
+This app uses Rails credentials for API keys.
+Add the key sent to you through email to `config/credentials.yml.enc`:
 
-* Database creation
+## Run locally
 
-* Database initialization
+```bash
+bin/setup
+bin/dev
+```
 
-* How to run the test suite
+Visit http://localhost:3000
 
-* Services (job queues, cache servers, search engines, etc.)
+## Run with Dev Container
 
-* Deployment instructions
+1. In VS Code, run the command: "Dev Containers: Reopen in Container".
+2. Wait for the container to finish running `bin/setup --skip-server`.
+3. Start the app in the container:
 
-* ...
+```bash
+bin/dev
+```
+
+The container forwards port 3000. Open http://localhost:3000.
+
+## Run tests
+
+```bash
+bundle exec rspec
+```
