@@ -49,12 +49,17 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+  gem "rspec-rails", "~> 8.0"
 end
 
 group :development do
-  # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 end
 
 gem "geocoder", "~> 1.8"
 gem "open-weather-ruby-client", "~> 0.6.0"
+
+group :test do
+  gem "capybara"
+  gem "selenium-webdriver"
+end
