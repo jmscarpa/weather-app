@@ -1,11 +1,15 @@
 <% if forecast %>
     <div class="forecast-result">
-        <div class="temp-main">
-            <div>
-                <p class="temp-value"><%= forecast[:temp] %>°</p>
-                <p class="location-name"><%= forecast[:name] %></p>
-            </div>
             <%= content_tag :span, "Cache", class: "badge-cache" if forecast[:cached] %>
+        <div class="temp-main">
+            <div class="weather-box">
+                <p class="temp-value"><%= forecast[:temp] %>°</p>
+                
+                <%= content_tag :div, class: "temp-main-inner" do %>
+                    <img src="<%= forecast[:weather][:icon] %>" alt="<%= forecast[:weather][:main] %>">
+                    <p class="weather-main-text"><%= forecast[:weather][:main] %></p>
+                <% end if forecast[:weather] %>
+            </div>
         </div>
 
         <div class="details-grid">

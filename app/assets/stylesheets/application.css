@@ -97,6 +97,25 @@ input[type="submit"]:active {
     margin: 0;
 }
 
+.temp-main-inner img {
+    width: 48px;
+    height: 48px;
+}
+
+.weather-main-text {
+    font-size: 14px;
+    color: var(--brand-text-secondary);
+    margin-top: 0;
+}
+
+.weather-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+}
+
 .forecast-result {
     margin-top: 40px;
     animation: fadeIn 0.8s ease-out;

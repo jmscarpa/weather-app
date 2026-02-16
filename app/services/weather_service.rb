@@ -35,10 +35,18 @@ class WeatherService
     client = OpenWeather::Client.new(api_key: Rails.application.credentials.dig(:openweather_api_key))
     data = client.current_weather(lat: lat, lon: lon, units: "metric")
 
+    # Save the raw response for debugging purposes
+    Rails.logger.debug "[WeatherService] OpenWeather API Response: #{data.to_json}"
+    File.write(Rails.root.join("log", "openweather_response.json"), JSON.pretty_generate(data.to_h))
+
     {
       temp: data.main.temp.round,
       high: data.main.temp_max.round,
-      low: data.main.temp_min.round
+      low: data.main.temp_min.round,
+      weather: {
+        main: data.weather.first.main,
+        icon: data.weather.first.icon_uri.to_s
+      }
     }
   rescue OpenWeather::Errors::Fault => e
     Rails.logger.error "[WeatherService] Failed to Fetch Openweather: #{e.message}"
