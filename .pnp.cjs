@@ -272,7 +272,7 @@ const RAW_RUNTIME_STATE =
     ]],\
     ["@hotwired/stimulus", [\
       ["npm:3.2.2", {\
-        "packageLocation": "../../../snap/code/220/.local/share/yarn/berry/cache/@hotwired-stimulus-npm-3.2.2-e1e064f1fe-10c0.zip/node_modules/@hotwired/stimulus/",\
+        "packageLocation": "../../../.yarn/berry/cache/@hotwired-stimulus-npm-3.2.2-e1e064f1fe-10c0.zip/node_modules/@hotwired/stimulus/",\
         "packageDependencies": [\
           ["@hotwired/stimulus", "npm:3.2.2"]\
         ],\
@@ -281,7 +281,7 @@ const RAW_RUNTIME_STATE =
     ]],\
     ["@hotwired/turbo", [\
       ["npm:8.0.23", {\
-        "packageLocation": "../../../snap/code/220/.local/share/yarn/berry/cache/@hotwired-turbo-npm-8.0.23-65aa204c65-10c0.zip/node_modules/@hotwired/turbo/",\
+        "packageLocation": "../../../.yarn/berry/cache/@hotwired-turbo-npm-8.0.23-65aa204c65-10c0.zip/node_modules/@hotwired/turbo/",\
         "packageDependencies": [\
           ["@hotwired/turbo", "npm:8.0.23"]\
         ],\
@@ -290,7 +290,7 @@ const RAW_RUNTIME_STATE =
     ]],\
     ["@hotwired/turbo-rails", [\
       ["npm:8.0.23", {\
-        "packageLocation": "../../../snap/code/220/.local/share/yarn/berry/cache/@hotwired-turbo-rails-npm-8.0.23-25a0373f6a-10c0.zip/node_modules/@hotwired/turbo-rails/",\
+        "packageLocation": "../../../.yarn/berry/cache/@hotwired-turbo-rails-npm-8.0.23-25a0373f6a-10c0.zip/node_modules/@hotwired/turbo-rails/",\
         "packageDependencies": [\
           ["@hotwired/turbo", "npm:8.0.23"],\
           ["@hotwired/turbo-rails", "npm:8.0.23"],\
@@ -301,7 +301,7 @@ const RAW_RUNTIME_STATE =
     ]],\
     ["@rails/actioncable", [\
       ["npm:8.1.200", {\
-        "packageLocation": "../../../snap/code/220/.local/share/yarn/berry/cache/@rails-actioncable-npm-8.1.200-ade4db8af2-10c0.zip/node_modules/@rails/actioncable/",\
+        "packageLocation": "../../../.yarn/berry/cache/@rails-actioncable-npm-8.1.200-ade4db8af2-10c0.zip/node_modules/@rails/actioncable/",\
         "packageDependencies": [\
           ["@rails/actioncable", "npm:8.1.200"]\
         ],\
