@@ -1,0 +1,26 @@
+<% if forecast %>
+    <div class="forecast-result">
+        <div class="temp-main">
+            <div>
+                <p class="temp-value"><%= forecast[:temp] %>°</p>
+                <p class="location-name"><%= forecast[:name] %></p>
+            </div>
+            <%= content_tag :span, "Cache", class: "badge-cache" if forecast[:cached] %>
+        </div>
+
+        <div class="details-grid">
+            <div class="detail-item">
+                <span>Min</span>
+                <p><%= forecast[:low] %>°</p>
+            </div>
+            <div class="detail-item">
+                <span>Max</span>
+                <p><%= forecast[:high] %>°</p>
+            </div>
+        </div>
+    </div>
+<% else %>
+<div class="empty-state">
+    <p> It wasn't possible to fetch information for <%= content_tag :strong, address %> </p>
+</div>
+<% end %>

@@ -55,3 +55,6 @@ group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
 end
+
+gem "geocoder", "~> 1.8"
+gem "open-weather-ruby-client", "~> 0.6.0"
